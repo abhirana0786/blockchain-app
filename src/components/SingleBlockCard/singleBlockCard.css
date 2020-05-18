@@ -1,0 +1,122 @@
+.header-hash {
+  width: 100%;
+  word-wrap: break-word;
+}
+
+.transaction-list {
+  padding: 20px;
+  max-width: 725px;
+  background-color: #f5f5f5;
+  color: black;
+}
+
+.txn-list-block-info {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: center;
+  color: blue;
+}
+
+.txn-list-item {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  color: blue;
+  padding: 5px;
+  max-width: 675px;
+  background-color: white;
+  word-wrap: break-word;
+}
+
+.txn-list-item label {
+  color: black;
+  margin: 0 10px;
+}
+
+.txn-list-item a {
+  text-decoration: none;
+}
+
+.row {
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-start;
+}
+
+.width-control-data {
+  max-width: 590px;
+  width: calc(100vw - 145px);
+}
+
+.width-control-txn {
+  max-width: 590px;
+  width: calc(100vw - 120px);
+}
+
+.width-control-io {
+  max-width: 520px;
+  width: calc(100vw - 130px);
+}
+
+.space-around {
+  justify-content: space-around;
+  max-width: 640px;
+}
+
+.txn-card {
+  margin: 20px 0 20px 0;
+  padding: 1px;
+  box-shadow: 0px 1px 3px 0px rgba(0,0,0,0.2);
+  max-width: 675px;
+  background-color: white;
+}
+
+.txn-card h5 {
+  color: black;
+  margin: 10px 5px;
+}
+
+.object-data-list {
+  color: blue;
+  max-width: 725px;;
+}
+
+.object-data-list-item {
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-start;
+  margin: 10px;
+  word-wrap: break-word;
+}
+
+.object-data-list-item label {
+  color: black;
+}
+
+.blockie {
+  width: 50px;
+  height: 50px;
+}
+
+@media (max-width: 600px) {
+  .blockie {
+    margin: 0 auto 10px auto;
+  }
+}
+
+.blockie-single {
+  width: 125px;
+  height: 125px;
+  margin: 20px auto 0 auto;
+}
+
+.blockie-txn {
+  width: 35px;
+  height: 35px;
+  margin: auto;
+}
+
+.pagination button {
+  margin: 10px 20px;
+}

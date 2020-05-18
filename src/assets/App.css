@@ -1,0 +1,108 @@
+.App {
+  width: 100%;
+  min-height: calc(100vh - 64px);
+  position: relative;
+}
+
+.App-logo {
+  animation: App-logo-spin infinite 20s linear;
+  height: 6vmin;
+  pointer-events: none;
+}
+
+.App-header {
+  background-color: #282c34;
+  min-height: 6vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  font-size: calc(10px + 2vmin);
+  color: white;
+}
+
+.App-header h4 {
+  margin: 10px 0;
+}
+
+.App-link {
+  color: #61dafb;
+}
+
+@keyframes App-logo-spin {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+.App-footer {
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+  min-height: 6vh;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  font-size: calc(6px + 2vmin);
+  color: white;
+  background-color: #282c34;
+}
+
+.block-list {
+  max-width: 725px;
+  margin: 0 auto;
+  padding: 5px 10px 7vh 10px;
+  border-radius: 10px;
+}
+
+.block-list h2 {
+  text-align: center;
+}
+
+.block-list-table-header {
+  padding: 5px 20px;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+
+.block-list tr {
+  margin: 10px;
+}
+
+.block-list-item {
+  display: flex;
+  justify-content: flex-start;
+  padding: 15px 5px;
+  color: blue;
+  background-color: white;
+  word-wrap: break-word;
+}
+
+.block-list-item label {
+  color: black;
+  min-width: 80px;
+}
+
+.block-list-item a {
+  text-decoration: none;
+}
+
+@media (max-width: 600px) {
+  .block-list-item {
+    flex-direction: column;
+    align-items: flex-start; 
+  }
+}
+
+@media (min-width: 600px) {
+  .block-list-item {
+    flex-direction: row;
+    justify-content: space-between;
+    padding:  5px 20px;
+  }
+}
