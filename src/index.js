@@ -1,15 +1,20 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
-import './index.css';
-import App from './App';
+import { createBrowserHistory } from 'history';
+import initializeStore from './redux/store';
+import Root from './components/Root';
 import * as serviceWorker from './serviceWorker';
 
-ReactDOM.render(
-  <React.StrictMode>
-    <App />
-  </React.StrictMode>,
-  document.getElementById('root')
-);
+import theme from './assets/theme';
+import './assets/index.css';
+
+// Create browser history
+const history = createBrowserHistory();
+
+// Create the store
+const store = initializeStore(history);
+
+ReactDOM.render(<Root store={store} history={history} theme={theme} />, document.getElementById('root'));
 
 // If you want your app to work offline and load faster, you can change
 // unregister() to register() below. Note this comes with some pitfalls.
