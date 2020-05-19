@@ -8,14 +8,9 @@ function App() {
   return (
     <div className="App">
       <header className="App-header">
-        Bitcoin Data
       </header>
       <LatestBlock />
       <BlockList />
-      <footer className="App-footer">
-        Built with React
-        <img src={logo} className="App-logo" alt="logo" />
-      </footer>
     </div>
   );
 }

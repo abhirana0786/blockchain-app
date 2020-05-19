@@ -12,20 +12,20 @@ class BlockList extends Component {
     // onBlockClick: PropTypes.func.isRequired,
     blocks: PropTypes.array
   };
-  
+
   componentDidMount() {
     this.props.getBlockData();
   }
-  
+
   createListOfBlocks = () => {
     let blockList = [];
-    if(this.props.blocks && this.props.blocks.length !== 0) {
+    if (this.props.blocks && this.props.blocks.length !== 0) {
       blockList = this.props.blocks.map(block => {
         return (
-          <BlockListItem 
+          <BlockListItem
             key={block.height}
             block={block}
-            // onClick={this.props.onBlockClick}
+          // onClick={this.props.onBlockClick}
           />
         )
       })
@@ -42,7 +42,7 @@ class BlockList extends Component {
   }
 
   render() {
-    
+
     return (
       <div className="block-list">
         <h2>
@@ -51,9 +51,9 @@ class BlockList extends Component {
         {window.innerWidth > 600 &&
           <div className='block-list-table-header'>
             <div style={{ width: '50px' }}></div>
-            <div style={{ width: '60px' }}>Height</div>
-            <div style={{ width: '210px' }}>Hash</div>
-            <div style={{ width: '110px' }}>Mined</div>
+            <div style={{ width: '50px' }}>Height</div>
+            <div style={{ width: '200px' }}>Hash</div>
+            <div style={{ width: '100px' }}>Minutes</div>
           </div>
         }
         {this.createListOfBlocks()}

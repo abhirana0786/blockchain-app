@@ -40,7 +40,7 @@ export default function BlockListItem(props) {
           </div>
 
           <div className='row'>
-            <label>Mined</label>
+            <label>Minutes</label>
             <div>
               {convert_epoch_to_minutes_ago(time)} minutes ago
             </div>

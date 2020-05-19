@@ -34,7 +34,7 @@ class LatestBlock extends Component {
             <div style={{ width: '50px' }}></div>
             <div style={{ width: '60px' }}>Height</div>
             <div style={{ width: '210px' }}>Hash</div>
-            <div style={{ width: '110px' }}>Mined</div>
+            <div style={{ width: '110px' }}>Minutes</div>
           </div>
         }
         {Object.keys(block).length === 0 ? (
